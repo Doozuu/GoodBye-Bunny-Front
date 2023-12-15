@@ -1,18 +1,18 @@
-import clothes1 from "../../assets/store/옷1.png";
-import clothes2 from "../../assets/store/옷2.png";
-import clothes3 from "../../assets/store/옷3.png";
-import clothes4 from "../../assets/store/옷4.png";
-import clothes5 from "../../assets/store/옷5.png";
-import clothes6 from "../../assets/store/옷6.png";
-import clothes7 from "../../assets/store/옷7.png";
+import clothes1 from "../../assets/store/clothes1.png";
+import clothes2 from "../../assets/store/clothes2.png";
+import clothes3 from "../../assets/store/clothes3.png";
+import clothes4 from "../../assets/store/clothes4.png";
+import clothes5 from "../../assets/store/clothes5.png";
+import clothes6 from "../../assets/store/clothes6.png";
+import clothes7 from "../../assets/store/clothes7.png";
 import closeIcon from "../../assets/store/x.png";
 import StoreButton from "./StoreButton";
-import bg1select from "../../assets/store/배경 1.png";
-import bg2select from "../../assets/store/배경 2.png";
-import bg3select from "../../assets/store/배경 3.png";
-import bg1 from "../../assets/store/배경 4.png";
-import bg2 from "../../assets/store/배경 5.png";
-import bg3 from "../../assets/store/배경 6.png";
+// import bg1select from "../../assets/store/배경 1.png";
+// import bg2select from "../../assets/store/배경 2.png";
+// import bg3select from "../../assets/store/배경 3.png";
+import bg1 from "../../assets/store/back4.png";
+import bg2 from "../../assets/store/back5.png";
+import bg3 from "../../assets/store/back6.png";
 import { useState } from "react";
 
 const PurchaseWindow = () => {
