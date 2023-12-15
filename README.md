@@ -18,5 +18,5 @@
 
 <br>
 
-## ✨ UI
+## ✨ UI 피그마
 [Figma](https://www.figma.com/file/LaIECzHycF31KKb0RRVoMa/Untitled?type=design&node-id=0%3A1&mode=design&t=B506dbd4vUAdLPFU-1)
