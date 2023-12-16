@@ -43,15 +43,17 @@ const RegisterPage = () => {
 
   const handleSubmit = async (event: FormEvent) => {
     event.preventDefault(); // 항상 기본 동작을 방지
+    alert("가입에 성공했습니다!");
+    nav("/login");
 
-    const profile = randomProfilePicker();
-    if (nickname && password && age && profile) {
-      const res = await signup({ nickname, password, age, profile });
-      if (res.status === 200) {
-        // 성공적으로 데이터를 받았을 때 메인 페이지로 이동
-        nav("/login");
-      }
-    }
+    // const profile = randomProfilePicker();
+    // if (nickname && password && age && profile) {
+    //   const res = await signup({ nickname, password, age, profile });
+    //   if (res.status === 200) {
+    //     // 성공적으로 데이터를 받았을 때 메인 페이지로 이동
+    //     nav("/login");
+    //   }
+    // }
   };
 
   useEffect(() => {
