@@ -35,6 +35,7 @@ const HistoryPage = () => {
             content={data.content}
             updateTime={data.updateTime}
             isMine={true}
+            keywords={data.keywords}
           />
         )}
         <h2 className="text-white font-bold text-smTitle mr-auto ml-6 mb-4 mt-6">
