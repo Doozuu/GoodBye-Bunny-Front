@@ -29,7 +29,6 @@ const CommentBox = ({ comments, setIsPost }: CommentBoxProps) => {
         setIsPost(true);
         localStorage.setItem("isPost", "true");
       } catch (err) {
-        console.log(err);
         alert("예기치 못한 에러가 발생했습니다.");
       }
     }

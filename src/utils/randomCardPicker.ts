@@ -13,3 +13,19 @@ export const randomCardPicker = ({ isLong }: RandomCardType) => {
 
   return isLong ? profileList[randomNum] : cardList[randomNum];
 };
+
+export const randomProfilePicker = () => {
+  const profileList = [
+    "profile1",
+    "profile2",
+    "profile3",
+    "profile4",
+    "profile5",
+    "profile6",
+    "profile7",
+  ];
+
+  const randomNum = Math.floor(Math.random() * profileList.length);
+
+  return profileList[randomNum];
+};

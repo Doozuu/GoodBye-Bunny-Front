@@ -2,9 +2,15 @@ import bg from "../assets/home/basic.png";
 import NavBar from "../components/common/NavBar";
 import rabbit from "../assets/store/rabbit.png";
 import { useNavigate } from "react-router-dom";
+import useUser from "../utils/hooks/user";
+import IntroPage from "./IntroPage";
+import { useState } from "react";
 
 const HomePage = () => {
   const nav = useNavigate();
+  const { isLoggedIn, user } = useUser();
+
+  if (!isLoggedIn) return <IntroPage />;
 
   return (
     <>

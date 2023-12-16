@@ -6,6 +6,18 @@ interface ButtonType {
   func?: function;
 }
 
+interface userLogin {
+  nickname: string;
+  password: string;
+}
+
+interface userSignUp {
+  nickname: string;
+  password: string;
+  age: number;
+  profile: string;
+}
+
 interface MaxWidthContainerProps {
   children: ReactNode;
 }
@@ -72,4 +84,12 @@ interface CommentPostType {
 
 interface RandomCardType {
   isLong?: boolean;
+}
+
+interface ProfileCard {
+  profile: string;
+}
+
+interface User {
+  jwt: string;
 }

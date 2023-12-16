@@ -16,7 +16,7 @@ const WritePage = () => {
       const res = await postReview({ title, content });
       console.log(res);
       alert("회고가 등록되었습니다!");
-      nav("/recommends");
+      nav("/mypost");
     } catch (err) {
       console.log(err);
       alert("예기치 못한 에러가 발생했습니다.");
