@@ -7,9 +7,9 @@ import clothes6 from "../../assets/store/clothes6.png";
 import clothes7 from "../../assets/store/clothes7.png";
 import closeIcon from "../../assets/store/x.png";
 import StoreButton from "./StoreButton";
-import bg1select from "../../assets/store/배경 1.png";
-import bg2select from "../../assets/store/배경 2.png";
-import bg3select from "../../assets/store/배경 3.png";
+import bg1select from "../../assets/store/back1.png";
+import bg2select from "../../assets/store/back2.png";
+import bg3select from "../../assets/store/back3.png";
 import bg1 from "../../assets/store/back4.png";
 import bg2 from "../../assets/store/back5.png";
 import bg3 from "../../assets/store/back6.png";
@@ -33,6 +33,7 @@ const PurchaseWindow = ({
   ];
   const bgList = [bg1, bg2, bg3];
   const [category, setCategory] = useState(0);
+  const selectBgList = [bg1select, bg2select, bg3select];
   const nav = useNavigate();
 
   return (
@@ -68,12 +69,9 @@ const PurchaseWindow = ({
           <>
             {bgList.map((item, idx) => (
               <img
-                src={item}
+                src={selectBg === idx ? selectBgList[idx] : item}
                 className={`w-[7rem] ml-auto mr-auto cursor-pointer
-            ${
-              selectBg === idx &&
-              "border-pointGreen border-[3px] rounded-[20px]"
-            }  pb-2`}
+             pb-2`}
                 onClick={() => setSelectBg(idx)}
               />
             ))}
