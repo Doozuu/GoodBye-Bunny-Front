@@ -55,6 +55,7 @@ const StorePage = () => {
               className="bg-black text-white font-bold w-[4.5rem] pt-2 pr-2 pb-1  pl-2 rounded-[30px] text-md ml-auto"
               onClick={() => {
                 setIsPurchase(true);
+                localStorage.setItem("isPurchase", "t");
               }}
             >
               구매

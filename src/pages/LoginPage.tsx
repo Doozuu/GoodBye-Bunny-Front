@@ -16,6 +16,7 @@ const LoginPage = () => {
     setIsError(false);
     setInputType(v);
   };
+
   const handleKeyDown = async (
     e: React.KeyboardEvent,
     nextRef: React.RefObject<HTMLInputElement>
@@ -89,14 +90,14 @@ const LoginPage = () => {
               <input
                 value={nickname}
                 onChange={(e) => setNickname(e.target.value)}
-                className={`bg-white text-2xl font-bold text-black placeholder-lightGray rounded-[24px] block w-full h-full p-4 pb-0  ${
-                  isError ? "border-pointRed border-2" : ""
-                }`}
+                className="focus:border-2 border-solid focus:border-blue focus:outline-none bg-white text-2xl font-bold text-black placeholder-lightGray rounded-[24px] block w-full h-full p-4 pt-9"
                 id="username"
                 placeholder="네이버"
                 type="text"
                 onKeyDown={(e) => handleKeyDown(e, passwordRef)}
-                onFocus={() => _setInputType("닉네임을")}
+                onFocus={() => {
+                  _setInputType("닉네임을");
+                }}
               />
             </div>
             <div className="relative mb-6 h-[96px]">
@@ -110,9 +111,7 @@ const LoginPage = () => {
                 ref={passwordRef}
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                className={`bg-white text-2xl text-black placeholder-lightGray rounded-[24px] block w-full h-full p-4 pb-0  ${
-                  isError && "border-pointRed border-2"
-                }`}
+                className={`focus:border-2 border-solid focus:border-blue focus:outline-none bg-white text-2xl text-black placeholder-lightGray rounded-[24px] block w-full h-full p-4 pb-0 `}
                 id="password"
                 placeholder="******"
                 type="password"

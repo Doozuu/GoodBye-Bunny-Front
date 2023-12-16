@@ -83,9 +83,7 @@ const RegisterPage = () => {
               <input
                 value={nickname}
                 onChange={(e) => setUsername(e.target.value)}
-                className={`bg-white text-2xl font-bold text-black placeholder-lightGray rounded-[24px] block w-full h-full p-4 pb-0 ${
-                  isError && "border-pointRed border-2"
-                }`}
+                className="focus:border-2 border-solid focus:border-blue focus:outline-none bg-white text-2xl font-bold text-black placeholder-lightGray rounded-[24px] block w-full h-full p-4 pt-9"
                 id="username"
                 placeholder="네이버"
                 type="text"
@@ -104,9 +102,7 @@ const RegisterPage = () => {
                 ref={passwordRef}
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                className={`bg-white text-2xl text-black placeholder-lightGray rounded-[24px] block w-full h-full p-4 pb-0 ${
-                  isError && "border-pointRed border-2"
-                }`}
+                className={`focus:border-2 border-solid focus:border-blue focus:outline-none bg-white text-2xl text-black placeholder-lightGray rounded-[24px] block w-full h-full p-4 pb-0 `}
                 id="password"
                 placeholder="******"
                 type="password"
@@ -127,9 +123,7 @@ const RegisterPage = () => {
                 onChange={({ target: { value } }) =>
                   setAge(value.length ? Number(value) : NaN)
                 }
-                className={`bg-white text-2xl font-bold text-black placeholder-lightGray rounded-[24px] block w-full h-full p-4 pb-0 ${
-                  isError && "border-pointRed border-2"
-                }`}
+                className={`focus:border-2 border-solid focus:border-blue focus:outline-none bg-white text-2xl text-black placeholder-lightGray rounded-[24px] block w-full h-full p-4 pb-0 font-bold`}
                 id="age"
                 placeholder="00"
                 type="text"
@@ -138,7 +132,7 @@ const RegisterPage = () => {
             </div>
             {isError && (
               <div className="mb-6 flex justify-between items-center">
-                <div className="pl-4 text-md text-pointRed text-s font-black">
+                <div className="pl-4 text-md text-pointRed font-black">
                   <div>닉네임 또는 비밀번호를 잘못 입력했습니다.</div>
                   <div>입력하신 내용을 다시 확인해주세요.</div>
                 </div>
