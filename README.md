@@ -12,10 +12,9 @@
 ## 🎄 팀원 소개
 | 프론트엔드 | 백엔드 | 백엔드 | 디자인 |
 |:---:|:---:|:---:|:---:|
-|<img width="150" src="https://avatars.githubusercontent.com/u/104717341?v=4" />|<img width="150" src="https://github.com/Naver-Hackathon-Clova-5DTeam/GoodBye-Bunny-Front/assets/55742497/5710e830-0c68-4b47-a083-9e5f3733df20"/>
- | | |
+|<img width="150" src="https://avatars.githubusercontent.com/u/104717341?v=4" />|  <img width="150" src="https://github.com/Naver-Hackathon-Clova-5DTeam/GoodBye-Bunny-Front/assets/55742497/5710e830-0c68-4b47-a083-9e5f3733df20" />  | | 
 | 이주희 | 김민준 | 김예린 | 김지안 |
-| [Doozuu](https://github.com/Doozuu) | https://github.com/GotPrgmer |  | |
+| [Doozuu](https://github.com/Doozuu) | [GotPrgmer](https://github.com/GotPrgmer) |  | |
 
 ## 🎄 서비스 기능
 - 회원가입/로그인
