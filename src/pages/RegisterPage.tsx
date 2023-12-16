@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, FormEvent, useState } from "react";
-import { signup } from "../api/client";
+import { signup } from "../api/login";
 import { randomProfilePicker } from "../utils/randomCardPicker";
 import { useNavigate } from "react-router-dom";
 

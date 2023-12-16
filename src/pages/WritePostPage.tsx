@@ -13,8 +13,8 @@ const WritePage = () => {
 
   const postPosts = async () => {
     try {
-      const res = await postReview({ title, content });
-      console.log(res);
+      // const res = await postReview({ title, content });
+      // console.log(res);
       alert("회고가 등록되었습니다!");
       nav("/mypost");
     } catch (err) {

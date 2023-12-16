@@ -1,6 +1,6 @@
 export const recommendData = [
   {
-    memberNickname: "체크",
+    memberNickname: "두주",
     profile:
       "https://cdn.pixabay.com/photo/2023/11/11/04/03/christmas-8380345_1280.png",
     title: "2023년의 회고",
@@ -11,24 +11,26 @@ export const recommendData = [
     keywords: ["학업", "여행", "업무"],
   },
   {
-    memberNickname: "체크1",
+    memberNickname: "룰루",
     profile:
       "https://cdn.pixabay.com/photo/2023/11/11/04/03/christmas-8380345_1280.png",
-    title: "제목2",
-    content: "asdfasdfsad",
+    title: "한 해를 돌아보며",
+    content:
+      "꽤 오랫동안 개인적으로 ‘글을 못 쓰는 병’이라고 부르던 상태에 놓여 있었습니다. 뭔가 머릿속에 생각이 스치고 지나가지만 그걸 타이핑해서 글로 만들려는 순간 머릿속이 하얗게 변하며 도무지 아무 것도 쓸 수 없었습니다. 처음 이런 상태를 인식한 것은 2011년이었는데 일할 때 외에는 개인적인 글을 전혀 쓸 수가 없었고 또 이전에 썼던 모든 글이 너무 마음에 들지 않았습니다. 이렇게 글을 안 쓴다면 굳이 비싼 호스팅 비용을 낼 필요가 없겠다 싶어 깃헙 페이지로 옮긴 적이 있는데 글보다는 글을 올리는 환경에 정신이 팔려 글을 쓰지 않았습니다. 글 쓰는 문턱을 낮추면 도움이 될까 싶어 굳이 글 제목을 쓸 필요 없고 또 호스팅에 신경 꺼도 되는 텀블러로 이전해봤는데 여전히 별 도움이 되지 않았습니다. 오히려 이전을 여러 번 거치면서 이전에 쌓은 글 전부를 웹에서 날려버렸습니다.",
     reviewId: 1,
     updateTime: "2023-12-13T21:27:58.613077",
-    keywords: ["직장", "가족", "친구"],
+    keywords: ["학업", "업무"],
   },
   {
-    memberNickname: "체크2",
+    memberNickname: "토끼2023",
     profile:
       "https://cdn.pixabay.com/photo/2023/11/11/04/03/christmas-8380345_1280.png",
-    title: "제목3",
-    content: "asdfasdfsad",
+    title: "힘들지만 뿌듯했던 날들",
+    content:
+      "앞서 2022년 글쓰기 회고를 했습니다. 요약하면 이전에 글을 쓰는데 어려움을 겪었는데 2022년에는 이 상태가 좀 나아져 뭘 좀 쓸 수 있게 됐다는 내용입니다. 이번에는 그렇게 쓴 글을 온라인 상에 몇 가지 방법으로 공유해 봤는데 각 방법을 설명하고 방법마다 잘 된 점, 잘 안 된 점을 정리하려고 합니다. 글을 쓰는 근본적인 이유는 생각의 멱살에서 설명한 대로 글은 한 가지 생각을 끊지 않고 계속해서 이어갈 수 있는 방법이어서입니다. 한편 그런 글 중 일부를 온라인 상에 공개해 놓는 이유는 예쁘게 표현하면 인정 욕구 때문이고 좀 더 직설적으로 이야기하면 거 다 자랑하려고 하는 거라고 생각합니다. 기왕에 인정 욕구를 충족하려면 글을 더 잘 쓰면 좋을 테니 글쓰기 회고 같은 것을 하는 거고 한편으로는 기왕에 공유한다면 더 많은 사람들에게 공유되면 기분이 좋을 겁니다. ",
     reviewId: 2,
-    updateTime: "2023-12-13T21:27:58.613077",
-    keywords: ["취미", "건강", "키워드3"],
+    updateTime: "2023-12-14T21:27:58.613077",
+    keywords: ["취미", "건강"],
   },
 ];
 
@@ -45,7 +47,7 @@ export const CommentData = [
     commentId: 2,
     profile:
       "https://cdn.pixabay.com/photo/2023/11/11/04/03/christmas-8380345_1280.png",
-    commentContent: "여행 가고 싶다",
+    commentContent: "저도 여행 가고 싶네요..",
     updateTime: "2023-12-14T01:19:59.335528",
     memberNickname: "min95913sdfsds",
   },
@@ -53,14 +55,14 @@ export const CommentData = [
     commentId: 52,
     profile:
       "https://cdn.pixabay.com/photo/2023/11/11/04/03/christmas-8380345_1280.png",
-    commentContent: "저도 열심히 살아야겠어요!",
+    commentContent: "저도 열심히 살아야겠어요! 내년도 파이팅!",
     updateTime: "2023-12-14T15:42:27.520062",
     memberNickname: "min95913sdfsds",
   },
 ];
 
 export const data = {
-  memberNickname: "체크",
+  memberNickname: "두주",
   title: "2023 회고",
   content:
     "올해는 국내 여행을 많이 다녔다. 특히 강릉이랑 여수에서의 여행이 기억에 남는다. 바다도 보고 한적한 카페에서 힐링했던 경험이 좋은 추억으로 남은 것 같아 내년 초에도 다시 가고 싶다. 그리고 개발 동아리에 처음 들어가 본격적으로 개발 공부를 시작하고, 처음으로 코테도 봤다. 점점 배워야 할 게 더 많아지는 것 같아 막막하기도 하지만, 꾸준히 하면 잘 될거라고 믿고 마음을 편하게 먹어야겠다고 다짐했다. 공모전에 다양하게 참가하면서 여러 사람들을 만나 배운 점이 많다.",

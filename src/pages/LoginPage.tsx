@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, FormEvent, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { login } from "../api/client";
+import { login } from "../api/login";
 
 const LoginPage = () => {
   const nav = useNavigate();
@@ -9,7 +9,9 @@ const LoginPage = () => {
   const [isFormReady, setIsFormReady] = useState(false);
   const [inputType, setInputType] = useState("닉네임을");
   const [isError, setIsError] = useState(false);
+
   const passwordRef = useRef<HTMLInputElement>(null);
+
   const _setInputType = (v: string) => {
     setIsError(false);
     setInputType(v);
@@ -39,15 +41,18 @@ const LoginPage = () => {
   const handleSubmit = async (event: FormEvent) => {
     event.preventDefault(); // 항상 기본 동작을 방지
 
-    if (nickname && password) {
-      const res = await login({ nickname, password });
-      if (res.data) {
-        // 성공적으로 데이터를 받았을 때 메인 페이지로 이동
+    alert("환영합니다!");
+    nav("/home");
 
-        localStorage.setItem("jwt", res.data);
-        nav("/");
-      }
-    }
+    // if (nickname && password) {
+    //   const res = await login({ nickname, password });
+    //   if (res.data) {
+    //     // 성공적으로 데이터를 받았을 때 메인 페이지로 이동
+
+    //     localStorage.setItem("jwt", res.data);
+    //     nav("/home");
+    //   }
+    // }
 
     // Actual submit phase
     // For now, just reject immediately with error.
@@ -76,7 +81,7 @@ const LoginPage = () => {
           <form id="login" name="login" onSubmit={handleSubmit}>
             <div className="relative mb-6 h-[96px]">
               <label
-                className="absolute pl-4 pt-5 text-deepGray block mb-2 text-sm font-medium"
+                className="absolute pl-4 pt-5 text-deepGray block mb-2 text-sm font-medium "
                 htmlFor="username"
               >
                 닉네임
@@ -84,8 +89,8 @@ const LoginPage = () => {
               <input
                 value={nickname}
                 onChange={(e) => setNickname(e.target.value)}
-                className={`bg-white text-2xl font-bold text-black placeholder-lightGray rounded-[24px] block w-full h-full p-4 pb-0 ${
-                  isError && "border-pointRed border-2"
+                className={`bg-white text-2xl font-bold text-black placeholder-lightGray rounded-[24px] block w-full h-full p-4 pb-0  ${
+                  isError ? "border-pointRed border-2" : ""
                 }`}
                 id="username"
                 placeholder="네이버"
@@ -105,7 +110,7 @@ const LoginPage = () => {
                 ref={passwordRef}
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                className={`bg-white text-2xl text-black placeholder-lightGray rounded-[24px] block w-full h-full p-4 pb-0 ${
+                className={`bg-white text-2xl text-black placeholder-lightGray rounded-[24px] block w-full h-full p-4 pb-0  ${
                   isError && "border-pointRed border-2"
                 }`}
                 id="password"
@@ -113,7 +118,6 @@ const LoginPage = () => {
                 type="password"
                 onFocus={() => _setInputType("비밀번호를")}
               />
-              <input type="password" />
             </div>
             <div className="mb-6 flex justify-between items-center">
               <div>
@@ -128,7 +132,7 @@ const LoginPage = () => {
             </div>
             {isError && (
               <div className="mb-6 flex justify-between items-center">
-                <div className="pl-4 text-md text-pointRed text-s font-black">
+                <div className="pl-4 text-pointRed text-s font-black">
                   <div>닉네임 또는 비밀번호를 잘못 입력했습니다.</div>
                   <div>입력하신 내용을 다시 확인해주세요.</div>
                 </div>

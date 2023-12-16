@@ -40,7 +40,7 @@ interface CommentBoxProps {
 }
 
 interface CardType {
-  nickname: string;
+  memberNickname: string;
   profile?: string;
   title: string;
   content: string;
@@ -92,4 +92,20 @@ interface ProfileCard {
 
 interface User {
   jwt: string;
+}
+
+interface WindowType {
+  select: number;
+  setSelect: React.Dispatch<React.SetStateAction<number>>;
+  setSelectBg: React.Dispatch<React.SetStateAction<number>>;
+  selectBg: number;
+}
+
+interface BtnType {
+  text: string;
+  isActive: boolean;
+}
+
+interface ModalType {
+  setIsPurchase: React.Dispatch<React.SetStateAction<boolean>>;
 }

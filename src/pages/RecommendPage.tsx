@@ -33,7 +33,7 @@ const RecommendPage = () => {
           recommendData.map((d, i) => (
             <Card
               key={i}
-              nickname={d.memberNickname}
+              memberNickname={d.memberNickname}
               profile={d.profile}
               title={d.title}
               content={d.content}

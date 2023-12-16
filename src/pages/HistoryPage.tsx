@@ -4,6 +4,7 @@ import { getMyReview } from "../api/review";
 import { data } from "../utils/data/mockData";
 import NavBar from "../components/common/NavBar";
 import LongCard from "../components/History/LongCard";
+import { recommendData } from "../utils/data/mockData";
 
 const HistoryPage = () => {
   // const [data, setData] = useState<CardType>();
@@ -29,7 +30,7 @@ const HistoryPage = () => {
         </h2>
         {data && (
           <Card
-            nickname={data.memberNickname}
+            memberNickname={data.memberNickname}
             title={data.title}
             content={data.content}
             updateTime={data.updateTime}
@@ -40,21 +41,13 @@ const HistoryPage = () => {
           내가 코멘트 달았던 회고
         </h2>
 
-        <LongCard
-          nickname={data.memberNickname}
-          title={data.title}
-          content={data.content}
-        />
-        <LongCard
-          nickname={data.memberNickname}
-          title={data.title}
-          content={data.content}
-        />
-        <LongCard
-          nickname={data.memberNickname}
-          title={data.title}
-          content={data.content}
-        />
+        {recommendData.map((data) => (
+          <LongCard
+            memberNickname={data.memberNickname}
+            title={data.title}
+            content={data.content}
+          />
+        ))}
       </div>
       <NavBar />
     </div>

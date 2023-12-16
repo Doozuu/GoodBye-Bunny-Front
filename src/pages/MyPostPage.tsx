@@ -37,7 +37,7 @@ const MyPostPage = () => {
     // 내 게시글 get 요청, 리뷰 아이디 받음
     // getReview();
     // 위에서 받은 리뷰 아이디로 댓글 get 요청
-    getComments();
+    // getComments();
     // 로컬에서 내 프로필 가져와 전달하기
   }, []);
 
@@ -51,7 +51,7 @@ const MyPostPage = () => {
               profile={profile}
               title={data.title}
               content={data.content}
-              nickname={data.memberNickname}
+              memberNickname={data.memberNickname}
               updateTime={data.updateTime}
               comments={CommentData}
             />

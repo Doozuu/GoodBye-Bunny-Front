@@ -16,7 +16,7 @@ const NavBar = () => {
     >
       <div
         className="flex flex-col items-center cursor-pointer w-[3rem]"
-        onClick={() => nav("/")}
+        onClick={() => nav("/home")}
       >
         <img src={homeIcon} className="w-[22px] h-[22px]" />
         <p className="text-sm">홈</p>

@@ -4,12 +4,13 @@ import editIcon from "../../assets/post/edit.png";
 import { useState, ChangeEvent, useEffect, useRef } from "react";
 import { patchReview } from "../../api/review";
 import PointModal from "../PointModal/pointModal";
+import { randomProfilePicker } from "../../utils/randomCardPicker";
 
 const PostBox = ({
   profile,
   title,
   content,
-  nickname,
+  memberNickname,
   updateTime,
   comments,
 }: CardType) => {
@@ -22,6 +23,11 @@ const PostBox = ({
   const isMine = path === "/mypost";
   const textareaRef = useRef<HTMLTextAreaElement | null>(null);
   const [isPost, setIsPost] = useState(false);
+  const [profleImg, setProfleImg] = useState("");
+
+  useEffect(() => {
+    setProfleImg(randomProfilePicker());
+  }, []);
 
   useEffect(() => {
     if (textareaRef.current) {
@@ -71,11 +77,11 @@ const PostBox = ({
       <div className="flex flex-col w-[100%] rounded-[24px] pl-4 pr-4 pb-4">
         <div className="flex bg-whiteGray items-center rounded-tl-[24px] rounded-tr-[24px] pl-[16px] pr-[16px] pb-[16px] pt-[16px]">
           <img
-            src={profile}
+            src={profleImg}
             className="w-[40px] h-[40px] rounded-[100%] mr-3"
           />
           <div>
-            <p>{nickname}님의 회고</p>
+            <p>{memberNickname}님의 회고</p>
             <p className="text-deepGray text-sm">{date}</p>
           </div>
           {isMine && (
